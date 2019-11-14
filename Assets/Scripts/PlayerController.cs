@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
       // Make the truck go forward
       transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput); 
       // make the truck go left and right
-      transform.Rotate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
+      transform.Rotate(Vector3.right, horizontalInput);
      // make the truck appear to turn 
       transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
     }
